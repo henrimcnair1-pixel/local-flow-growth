@@ -53,18 +53,12 @@ export default function App() {
       {/* Top Header Identity - Closed Funnel (No Navigation Links) */}
       <header className="w-full py-5 px-4 bg-white border-b border-slate-200/80 sticky top-0 z-50">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-lg bg-green-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">
-              L
-            </div>
-            <div>
-              <span className="font-extrabold text-xl tracking-tight text-slate-900 block leading-tight">
-                LOCAL FLOW <span className="text-green-600">GROWTH</span>
-              </span>
-              <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-500 block">
-                UK Landscaping Lead Agency
-              </span>
-            </div>
+          <div className="flex items-center gap-3">
+            <img
+              src="/local-flow-growth-logo.svg"
+              alt="Local Flow Growth logo"
+              className="h-16 w-auto object-contain"
+            />
           </div>
           <div className="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-slate-600 bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
@@ -381,10 +375,19 @@ export default function App() {
       </section>
 
       {/* Minimal Footer - Closed Funnel */}
-      <footer className="py-8 px-4 bg-white border-t border-slate-200 text-center text-xs text-slate-500">
-        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} Local Flow Growth. Exclusive Lead Generation for UK Landscapers.</p>
-          <p className="text-slate-400">Direct-Response Contractor Systems</p>
+      <footer className="py-10 px-4 bg-white border-t border-slate-200 text-center text-xs text-slate-500">
+        <div className="max-w-4xl mx-auto flex flex-col items-center gap-6">
+          <img
+            src="/local-flow-growth-logo.svg"
+            alt="Local Flow Growth logo"
+            className="h-24 w-auto object-contain"
+          />
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full">
+            <p>© {new Date().getFullYear()} Local Flow Growth. Exclusive Lead Generation for UK Landscapers.</p>
+            <a href="mailto:henri@localflowgrowth.co.uk" className="text-green-700 hover:text-green-800 font-semibold underline underline-offset-4">
+              henri@localflowgrowth.co.uk
+            </a>
+          </div>
         </div>
       </footer>
     </div>
