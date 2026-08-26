@@ -1,0 +1,6 @@
+{
+  "name": "Local Flow Growth",
+  "description": "Lead generation landing page for UK landscaping contractors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
