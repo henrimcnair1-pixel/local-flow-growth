@@ -4,6 +4,7 @@
  */
 
 import React, { useState } from 'react';
+import { logoDataUri } from './logo';
 import { 
   PoundSterling, 
   Megaphone, 
@@ -55,7 +56,7 @@ export default function App() {
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img
-              src="/lfg-logo.png"
+              src={logoDataUri}
               alt="Local Flow Growth logo"
               className="h-16 w-auto object-contain"
             />
@@ -378,7 +379,7 @@ export default function App() {
       <footer className="py-10 px-4 bg-white border-t border-slate-200 text-center text-xs text-slate-500">
         <div className="max-w-4xl mx-auto flex flex-col items-center gap-6">
           <img
-            src="/lfg-logo.png"
+            src={logoDataUri}
             alt="Local Flow Growth logo"
             className="h-24 w-auto object-contain"
           />
